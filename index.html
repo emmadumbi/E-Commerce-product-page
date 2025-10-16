@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!--tailwindcss-->
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <!--font-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | E-commerce product page</title>
+</head>
+
+<body>
+  <header>
+    <section class="header container">
+      <div class="flex header-right">
+        <img src="./imgs/icon-menu.svg" alt="open menu" />
+        <h1 class="title">Sneakers</h1>
+      </div>
+      
+      <div class="flex header-left">
+        <img src="./imgs/icon-cart.svg" alt="cart icon" />
+        <p class="cart-quantity-el">3</p>
+        <div class="profile-div">
+          <img src="./imgs/image-avatar.png" alt="your profile" />
+        </div>
+      </div>
+    </section>
+  </header>
+  <main>
+    <section class="hero relative">
+      <div class="products">
+        <img src="../imgs/image-product-1.jpg" alt="product 1" />
+      </div>
+      <div class="slide-control-btns">
+        <a href="#" class="slide-btns">
+          <img src="./imgs/icon-previous.svg" alt="" />
+        </a>
+        <a href="#" class="slide-btns">
+          <img src="./imgs/icon-next.svg" alt="" />
+        </a>
+      </div>
+      <!-- Empty cart -->
+      <div class="empty-cart-container hidden">
+        <h2>Cart</h2>
+        <hr />
+        <div class="empty-cart">
+          <p>Your cart is empty.</p>
+        </div>
+      </div>
+      <!--filled cart-->
+      <div class="filled-cart-container">
+        <h2>Cart</h2>
+        <hr />
+        <div class="filled-cart">
+          <div class="cart-details">
+            <div class="cart-product-left">
+              <img src="./imgs/image-product-1.jpg" alt="" />
+            </div>
+            <div class="cart-product-middle">
+              <span>Fall Limited Edition Sneakers</span>
+              <div>
+                <span>$125 x</span>
+                <span>3</span>
+                <span>$375</span>
+              </div>
+            </div>
+            <div class="cart-product-right">
+              <img src="./imgs/icon-delete.svg" alt="" />
+            </div>
+          </div>
+          <button>Checkout</button>
+        </div>
+      </div>
+    </section>
+    <section class="product-details container">
+      <div class="">
+        <h2 class="product-title">Sneaker Company</h2>
+        <h3 class="product-des">Fall Limited Edition Sneakers</h3>
+        <p class="product-summary">These low-profile sneakers are your perfect wear companion. Featuring a durable rubber outer sole, so they'll withstand everything the weather can offer.</p>
+      </div>
+      <div class="price-container">
+        <p class="current-price">$125.00</p>
+        <p class="discount">50%</p>
+        <p class="price-before">$250.00</p>
+      </div>
+    </section>
+    <section class="container">
+      <div class="cart-quantity-container">
+        <button class="decrease-btn">
+          <img src="./imgs/icon-minus.svg" alt="" />
+        </button>
+        <p class="font-bold quantity-el">
+          
+        </p>
+        <button class="increase-btn">
+          <img src="./imgs/icon-plus.svg" alt="" />
+        </button>
+      </div>
+      <button class="add-to-cart-btn">
+        <img src="./imgs/icon-cart.svg" alt="" />
+        Add to cart
+      </button>
+    </section>
+  </main>
+  <script src="./script.js"></script>
+</body>
+
+</html>
