@@ -9,6 +9,9 @@ const emptyCart = document.querySelector('.empty-cart-container');
 const filledCart = document.querySelector('.filled-cart-container');
 const cartIcon = document.querySelector('.cart-icon');
 const deleteCart = document.querySelector('.delete-cart');
+const closeMenuBtn = document.querySelector('.close-menu');
+const overLay = document.querySelector('.overlay');
+const  openMenuBtn = document.querySelector('.open-menu');
 
 function renderPage() {
   let cartQuantity = Number(localStorage.getItem('cartQuantity')) || 0;
@@ -79,7 +82,16 @@ function renderPage() {
     cartQuantity = 0;
     localStorage.removeItem('cartQuantity');
     renderPage();
-    
-  })
+  });
+  
+  overLay.style.display = 'none';
+  closeMenuBtn.addEventListener('click',()=>{
+    overLay.style.display = 'none';
+    console.log(7)
+  });
+  
+  openMenuBtn.addEventListener('click',()=>{
+    overLay.style.display = 'block'
+  });
 };
 renderPage();

@@ -32,6 +32,30 @@ body {
   margin-inline: auto;
 }
 
+.overlay{
+  background: rgba(0, 0, 0, 0.7);
+  position: fixed;
+  inset: 0;
+  z-index: 1;
+}
+
+.nav{
+  background: var(--White);
+  min-height: 100vh;
+  width: 60%;
+  padding-block-start: 1rem;
+  padding-inline-start: 1rem;
+}
+
+.link-conatainer{
+  font-weight: var(--bold);
+  padding-block-start: 2.5rem;
+  color: var(--Dark-grayish-blue);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .flex {
   display: flex;
   gap: 1em;

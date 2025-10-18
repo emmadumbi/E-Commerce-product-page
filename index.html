@@ -19,10 +19,10 @@
 </head>
 
 <body>
-  <header>
+  <header class="relative">
     <section class="header container">
       <div class="flex header-left">
-        <img src="./imgs/icon-menu.svg" alt="open menu" />
+        <button class="open-menu"><img src="./imgs/icon-menu.svg" alt="open menu" /></button>
         <h1 class="title">Sneakers</h1>
       </div>
       
@@ -35,6 +35,30 @@
           <img src="./imgs/image-avatar.png" alt="your profile" />
         </div>
       </div>
+    </section>
+    <section class="overlay">
+      <nav class="nav">
+        <div class="container">
+          <button class="close-menu"><img src="./imgs/icon-close.svg" alt="" /></button>
+          <ul class="link-conatainer">
+            <li><a href="#">
+                Collection
+              </a></li>
+            <li><a href="#">
+                Men
+              </a></li>
+            <li><a href="#">
+                Women
+              </a></li>
+            <li><a href="#">
+                About
+              </a></li>
+            <li><a href="#">
+                Contact
+              </a></li>
+          </ul>
+        </div>
+      </nav>
     </section>
   </header>
   <main>
