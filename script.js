@@ -11,7 +11,25 @@ const cartIcon = document.querySelector('.cart-icon');
 const deleteCart = document.querySelector('.delete-cart');
 const closeMenuBtn = document.querySelector('.close-menu');
 const overLay = document.querySelector('.overlay');
-const  openMenuBtn = document.querySelector('.open-menu');
+const openMenuBtn = document.querySelector('.open-menu');
+
+// Initialize Swiper
+const swiper = new Swiper('.swiper', {
+  loop: true,
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
+});
+
 
 function renderPage() {
   let cartQuantity = Number(localStorage.getItem('cartQuantity')) || 0;
@@ -78,19 +96,18 @@ function renderPage() {
     cartQuantityEl.style.display = 'block'
   });
   
-  deleteCart.addEventListener('click',()=>{
+  deleteCart.addEventListener('click', () => {
     cartQuantity = 0;
     localStorage.removeItem('cartQuantity');
     renderPage();
   });
   
   overLay.style.display = 'none';
-  closeMenuBtn.addEventListener('click',()=>{
+  closeMenuBtn.addEventListener('click', () => {
     overLay.style.display = 'none';
-    console.log(7)
   });
   
-  openMenuBtn.addEventListener('click',()=>{
+  openMenuBtn.addEventListener('click', () => {
     overLay.style.display = 'block'
   });
 };

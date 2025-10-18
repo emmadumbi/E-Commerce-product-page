@@ -13,6 +13,10 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
   
+  <!-- Swiper CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
+  
   <link rel="stylesheet" href="style.css">
   
   <title>Frontend Mentor | E-commerce product page</title>
@@ -63,17 +67,42 @@
   </header>
   <main>
     <section class="hero relative">
-      <div class="products">
-        <img src="../imgs/image-product-1.jpg" alt="product 1" />
+      <!--slider container-->
+      <div class="products swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="../imgs/image-product-1.jpg" alt="product 1" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../imgs/image-product-2.jpg" alt="product 2" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../imgs/image-product-3.jpg" alt="product 3" />
+          </div>
+          <div class="swiper-slide">
+            <img src="../imgs/image-product-4.jpg" alt="product 4" />
+          </div>
+        </div>
+        
+        <div class="swiper-pagination"></div>
+        
+        <!--swipe buttons-->
+        <div class="swiper-button-prev">
+          
+        </div>
+        <div class="swiper-button-next">
+          
+        </div>
+        <!--<div class="slide-control-btns">
+          <a href="#" class="slide-btns swiper-button-prev">
+            <img src="./imgs/icon-previous.svg" alt="" />
+          </a>
+          <a href="#" class="slide-btns swiper-button-next">
+            <img src="./imgs/icon-next.svg" alt="" />
+          </a>
+        </div>-->
       </div>
-      <div class="slide-control-btns">
-        <a href="#" class="slide-btns">
-          <img src="./imgs/icon-previous.svg" alt="" />
-        </a>
-        <a href="#" class="slide-btns">
-          <img src="./imgs/icon-next.svg" alt="" />
-        </a>
-      </div>
+      
       <!-- Empty cart -->
       <div class="empty-cart-container">
         <h2>Cart</h2>
@@ -139,6 +168,7 @@
       </button>
     </section>
   </main>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script src="./script.js"></script>
 </body>
 
