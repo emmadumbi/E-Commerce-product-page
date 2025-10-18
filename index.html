@@ -21,14 +21,16 @@
 <body>
   <header>
     <section class="header container">
-      <div class="flex header-right">
+      <div class="flex header-left">
         <img src="./imgs/icon-menu.svg" alt="open menu" />
         <h1 class="title">Sneakers</h1>
       </div>
       
-      <div class="flex header-left">
-        <img src="./imgs/icon-cart.svg" alt="cart icon" />
-        <p class="cart-quantity-el">3</p>
+      <div class="flex header-right">
+        <button class="cart-icon">
+          <img src="./imgs/icon-cart.svg" alt="cart icon" />
+        </button>
+        <p class="cart-quantity-el"></p>
         <div class="profile-div">
           <img src="./imgs/image-avatar.png" alt="your profile" />
         </div>
@@ -49,7 +51,7 @@
         </a>
       </div>
       <!-- Empty cart -->
-      <div class="empty-cart-container hidden">
+      <div class="empty-cart-container">
         <h2>Cart</h2>
         <hr />
         <div class="empty-cart">
@@ -66,18 +68,20 @@
               <img src="./imgs/image-product-1.jpg" alt="" />
             </div>
             <div class="cart-product-middle">
-              <span>Fall Limited Edition Sneakers</span>
+              <span class="text-gray">Fall Limited Edition Sneakers</span>
               <div>
-                <span>$125 x</span>
-                <span>3</span>
-                <span>$375</span>
+                <span class="text-gray">$125.00 x</span>
+                <span class="text-gray checkout-cart-quantity">3</span>
+                <span class="font-bold total-price"></span>
               </div>
             </div>
             <div class="cart-product-right">
-              <img src="./imgs/icon-delete.svg" alt="" />
+              <button class="delete-cart">
+                <img src="./imgs/icon-delete.svg" alt="" />
+              </button>
             </div>
           </div>
-          <button>Checkout</button>
+          <button class="checkout-btn">Checkout</button>
         </div>
       </div>
     </section>
