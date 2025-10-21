@@ -14,24 +14,27 @@ const overLay = document.querySelector('.overlay');
 const openMenuBtn = document.querySelector('.open-menu');
 
 // Initialize Swiper
-const swiper = new Swiper('.swiper', {
-  loop: true,
-  pagination: {
-    el: '.swiper-pagination',
-    clickable: true,
-  },
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
-});
 
 
 function renderPage() {
+  const swiper = new Swiper('.swiper', {
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
+  });
+  
+  
+  
   let cartQuantity = Number(localStorage.getItem('cartQuantity')) || 0;
   
   let initialQuantity = 0;
@@ -102,13 +105,12 @@ function renderPage() {
     renderPage();
   });
   
-  overLay.style.display = 'none';
   closeMenuBtn.addEventListener('click', () => {
-    overLay.style.display = 'none';
+    overLay.classList.remove('show-mobileNav');
   });
   
   openMenuBtn.addEventListener('click', () => {
-    overLay.style.display = 'block'
+    overLay.classList.add('show-mobileNav');
   });
 };
 renderPage();
