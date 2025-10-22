@@ -1,166 +1,168 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <!--tailwindcss-->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <!--tailwindcss-->
-  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <!--font-->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap" rel="stylesheet">
-  
-  <!-- Swiper CSS -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-  
-  
-  <link rel="stylesheet" href="style.css">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-</head>
+    <!--font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
 
-<body>
-  <header class="relative">
-    <section class="header container">
-      <div class="flex header-left">
-        <button class="open-menu"><img src="./imgs/icon-menu.svg" alt="open menu" /></button>
-        <h1 class="title">Sneakers</h1>
-      </div>
-      
-      <div class="flex header-right">
-        <button class="cart-icon">
-          <img src="./imgs/icon-cart.svg" alt="cart icon" />
-        </button>
-        <p class="cart-quantity-el"></p>
-        <div class="profile-div">
-          <img src="./imgs/image-avatar.png" alt="your profile" />
+    <!-- Swiper CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
+
+  <body>
+    <header class="relative">
+      <section class="header container">
+        <div class="flex header-left">
+          <button class="open-menu">
+            <img src="./imgs/icon-menu.svg" alt="open menu" />
+          </button>
+          <h1 class="title">Sneakers</h1>
         </div>
-      </div>
-    </section>
-    <section class="overlay ">
-      <nav class="nav">
-        <div class="container">
-          <button class="close-menu"><img src="./imgs/icon-close.svg" alt="" /></button>
-          <ul class="link-conatainer">
-            <li><a href="#">
-                Collection
-              </a></li>
-            <li><a href="#">
-                Men
-              </a></li>
-            <li><a href="#">
-                Women
-              </a></li>
-            <li><a href="#">
-                About
-              </a></li>
-            <li><a href="#">
-                Contact
-              </a></li>
-          </ul>
-        </div>
-      </nav>
-    </section>
-  </header>
-  <main>
-    <section class="hero relative">
-      <!--slider container-->
-      <div class="products swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="../imgs/image-product-1.jpg" alt="product 1" />
-          </div>
-          <div class="swiper-slide">
-            <img src="../imgs/image-product-2.jpg" alt="product 2" />
-          </div>
-          <div class="swiper-slide">
-            <img src="../imgs/image-product-3.jpg" alt="product 3" />
-          </div>
-          <div class="swiper-slide">
-            <img src="../imgs/image-product-4.jpg" alt="product 4" />
+
+        <div class="flex header-right">
+          <button class="cart-icon">
+            <img src="./imgs/icon-cart.svg" alt="cart icon" />
+          </button>
+          <p class="cart-quantity-el"></p>
+          <div class="profile-div">
+            <img src="./imgs/image-avatar.png" alt="your profile" />
           </div>
         </div>
-        
-        <div class="swiper-pagination"></div>
-        
-        <!--swipe buttons-->
-        <div class="swiper-button-prev">
-          
-        </div>
-        <div class="swiper-button-next">
-        </div>
-      </div>
-      
-      <!-- Empty cart -->
-      <div class="empty-cart-container">
-        <h2>Cart</h2>
-        <hr />
-        <div class="empty-cart">
-          <p>Your cart is empty.</p>
-        </div>
-      </div>
-      <!--filled cart-->
-      <div class="filled-cart-container">
-        <h2>Cart</h2>
-        <hr />
-        <div class="filled-cart">
-          <div class="cart-details">
-            <div class="cart-product-left">
-              <img src="./imgs/image-product-1.jpg" alt="" />
+      </section>
+      <section class="overlay">
+        <nav class="nav">
+          <div class="container">
+            <button class="close-menu">
+              <img src="./imgs/icon-close.svg" alt="" />
+            </button>
+            <ul class="link-conatainer">
+              <li><a href="#"> Collection </a></li>
+              <li><a href="#"> Men </a></li>
+              <li><a href="#"> Women </a></li>
+              <li><a href="#"> About </a></li>
+              <li><a href="#"> Contact </a></li>
+            </ul>
+          </div>
+        </nav>
+      </section>
+    </header>
+    <main>
+      <section class="hero relative">
+        <!--slider container-->
+        <div class="products swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <img src="../imgs/image-product-1.jpg" alt="product 1" />
             </div>
-            <div class="cart-product-middle">
-              <span class="text-gray">Fall Limited Edition Sneakers</span>
-              <div>
-                <span class="text-gray">$125.00 x</span>
-                <span class="text-gray checkout-cart-quantity">3</span>
-                <span class="font-bold total-price"></span>
+            <div class="swiper-slide">
+              <img src="../imgs/image-product-2.jpg" alt="product 2" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/image-product-3.jpg" alt="product 3" />
+            </div>
+            <div class="swiper-slide">
+              <img src="../imgs/image-product-4.jpg" alt="product 4" />
+            </div>
+          </div>
+
+          <div class="swiper-pagination"></div>
+
+          <!--swipe buttons-->
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+        </div>
+
+        <!-- Empty cart -->
+        <div class="empty-cart-container">
+          <h2>Cart</h2>
+          <hr />
+          <div class="empty-cart">
+            <p>Your cart is empty.</p>
+          </div>
+        </div>
+        <!--filled cart-->
+        <div class="filled-cart-container">
+          <h2>Cart</h2>
+          <hr />
+          <div class="filled-cart">
+            <div class="cart-details">
+              <div class="cart-product-left">
+                <img src="./imgs/image-product-1.jpg" alt="" />
+              </div>
+              <div class="cart-product-middle">
+                <span class="text-gray">Fall Limited Edition Sneakers</span>
+                <div>
+                  <span class="text-gray">$125.00 x</span>
+                  <span class="text-gray checkout-cart-quantity">3</span>
+                  <span class="font-bold total-price"></span>
+                </div>
+              </div>
+              <div class="cart-product-right">
+                <button class="delete-cart">
+                  <img src="./imgs/icon-delete.svg" alt="" />
+                </button>
               </div>
             </div>
-            <div class="cart-product-right">
-              <button class="delete-cart">
-                <img src="./imgs/icon-delete.svg" alt="" />
-              </button>
-            </div>
+            <button class="checkout-btn">Checkout</button>
           </div>
-          <button class="checkout-btn">Checkout</button>
         </div>
-      </div>
-    </section>
-    <section class="product-details container">
-      <div class="">
-        <h2 class="product-title">Sneaker Company</h2>
-        <h3 class="product-des">Fall Limited Edition Sneakers</h3>
-        <p class="product-summary">These low-profile sneakers are your perfect wear companion. Featuring a durable rubber outer sole, so they'll withstand everything the weather can offer.</p>
-      </div>
-      <div class="price-container">
-        <p class="current-price">$125.00</p>
-        <p class="discount">50%</p>
-        <p class="price-before">$250.00</p>
-      </div>
-    </section>
-    <section class="container">
-      <div class="cart-quantity-container">
-        <button class="decrease-btn">
-          <img src="./imgs/icon-minus.svg" alt="" />
+      </section>
+      <section class="product-details container">
+        <div class="">
+          <h2 class="product-title">Sneaker Company</h2>
+          <h3 class="product-des">Fall Limited Edition Sneakers</h3>
+          <p class="product-summary">
+            These low-profile sneakers are your perfect wear companion.
+            Featuring a durable rubber outer sole, so they'll withstand
+            everything the weather can offer.
+          </p>
+        </div>
+        <div class="price-container">
+          <p class="current-price">$125.00</p>
+          <p class="discount">50%</p>
+          <p class="price-before">$250.00</p>
+        </div>
+      </section>
+      <section class="container">
+        <div class="cart-quantity-container">
+          <button class="decrease-btn">
+            <img src="./imgs/icon-minus.svg" alt="" />
+          </button>
+          <p class="font-bold quantity-el"></p>
+          <button class="increase-btn">
+            <img src="./imgs/icon-plus.svg" alt="" />
+          </button>
+        </div>
+        <button class="add-to-cart-btn">
+          <img src="./imgs/icon-cart.svg" alt="" />
+          Add to cart
         </button>
-        <p class="font-bold quantity-el">
-          
-        </p>
-        <button class="increase-btn">
-          <img src="./imgs/icon-plus.svg" alt="" />
-        </button>
-      </div>
-      <button class="add-to-cart-btn">
-        <img src="./imgs/icon-cart.svg" alt="" />
-        Add to cart
-      </button>
-    </section>
-  </main>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script src="./script.js"></script>
-</body>
-
+      </section>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
 </html>
